@@ -1,3 +1,4 @@
+
 def rotarPalabra(palabra):
     rotacion = []
     alerta = "no_espacio"
@@ -20,7 +21,6 @@ def rotarPalabra(palabra):
     rotacion2 = rotacion2[::-1]
     return rotacion2
 
-print(rotarPalabra("rotar") )
 
 def ejercicio1(var1):
     return rotarPalabra(var1)
