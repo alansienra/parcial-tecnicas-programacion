@@ -3,7 +3,7 @@ import ejercicio1
 
 class ejercicio1Test(unittest.TestCase):
 
-    def testRotarPalabrasRecibeCadenaVaciaDeberiaDevolverUnaListaVacia(self):
+    def testRotarPalabraRecibeCadenaVaciaDeberiaDevolverUnaListaVacia(self):
         # Arrange
         cadenaVacia = ''
         # Act
@@ -12,7 +12,7 @@ class ejercicio1Test(unittest.TestCase):
         self.assertTrue(resultado == [])
 
 
-    def testRotarPalabrasRecibeCadenaConSoloEspaciosYDeberiaDevolverUnaListaVacia(self):
+    def testRotarPalabraRecibeCadenaConSoloEspaciosYDeberiaDevolverUnaListaVacia(self):
         # Arrange
         cadenaConEspacios = '    '
         # Act
@@ -21,7 +21,7 @@ class ejercicio1Test(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testRotarPalabrasRecibeUnaLetraAMinusculaYDeberiaDevolverUnaListaConMismaLetraDentro(self):
+    def testRotarPalabraRecibeUnaLetraAMinusculaYDeberiaDevolverUnaListaConMismaLetraDentro(self):
             # Arrange
             cadena = 'a'
             # Act
@@ -30,7 +30,7 @@ class ejercicio1Test(unittest.TestCase):
             self.assertTrue(resultado == ['a'])
 
 
-    def testRotarPalabrasRecibeUnaCadenaDeDosCaracteresYDeberiaDevolverUnaListaConSusTodasSusRotaciones(self):
+    def testRotarPalabraRecibeUnaCadenaDeDosCaracteresYDeberiaDevolverUnaListaCon2Rotaciones(self):
             # Arrange
             cadena = 'ab'
             # Act
@@ -39,7 +39,7 @@ class ejercicio1Test(unittest.TestCase):
             self.assertEqual(resultado, ["ab", "ba"])
 
 
-    def testRotarPalabrasRecibeCadenaDeTresCaracteresYDeberiaDevolverUnaListaConTodasSusRotaciones(self):
+    def testRotarPalabraRecibeCadenaDeTresCaracteresYDeberiaDevolverUnaListaCon3Rotaciones(self):
             # Arrange
             cadena = 'paz'
             # Act
@@ -48,7 +48,7 @@ class ejercicio1Test(unittest.TestCase):
             self.assertTrue(resultado == ["paz", "azp", "zpa"])
 
 
-    def testRotarPalabrasRecibeUnaCadenaConDosCaracteresUnEspacioYUnCaracterYDevuelveUnaListaConTodasSusRotaciones(self):
+    def testRotarPalabrasRecibeUnaCadenaConDosCaracteresUnEspacioYUnCaracterYDevuelveUnaListaCon4Rotaciones(self):
             # Arrange
             cadenaConEspacio = 'so l'
             # Act
@@ -57,7 +57,7 @@ class ejercicio1Test(unittest.TestCase):
             self.assertEqual(resultado, ["so l", "o ls", " lso", "lso "])
 
 
-    def testRotarPalabrasRecibeUnaCadenaDeCincoCaracteresYDeberiaDevolverUnaListaConTodasSusRotaciones(self):
+    def testRotarPalabrasRecibeUnaCadenaDeCincoCaracteresYDeberiaDevolverUnaListaCon5Rotaciones(self):
             # Arrange
             cadena = 'rotar'
             # Act

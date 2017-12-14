@@ -3,7 +3,7 @@ import ejercicio2
 
 class ejercicio2Test(unittest.TestCase):
 
-    def testCoordenadasDeBotesNoHundidosRecibeUnMapaVacioYDeberiaDevolvereUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeUnMapaVacioYDeberiaDevolvereUnaListaVacia(self):
         # Arrange
         listaVacia = []
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -13,7 +13,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertListEqual(resultado, [])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeCadenaVaciaYDeberiaDevolverUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeCadenaVaciaYDeberiaDevolverUnaListaVacia(self):
         # Arrange
         cadenaVacia = ''
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -23,7 +23,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertTrue(resultado == [])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeCadenaSoloConEspaciosYDeberiaDevolverUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeCadenaSoloConEspaciosYDeberiaDevolverUnaListaVacia(self):
         # Arrage
         cadenaConEspacios = '     '
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -33,7 +33,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeUnaListaConUnaCadenaDeCaracteresDistintosAPuntoOBLargaYDeberiaDevolverUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeUnaListaConUnaCadenaDeCaracteresDistintosAPuntoOBLargaYDeberiaDevolverUnaListaVacia(self):
         # Arrange
         listaConCadenaInesperada = ["soy NO valido"]
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]        # Act
@@ -41,7 +41,7 @@ class ejercicio2Test(unittest.TestCase):
         # Assert
         self.assertListEqual(resultado, [])
 
-    def testCoordenadasDeBotesNoHundidosRecibeUnaListaConCadenasDeCaracteresDistintosAPuntoOBLargaYDeberiaDevolverUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeOtraListaConCadenasDeCaracteresDistintosAPuntoOBLargaYDeberiaDevolverUnaListaVacia(self):
         # Arrange
         listaConCadenasInesperadas = ["yo", "tambien", "soy", "invalido"]
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -51,7 +51,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertTrue(resultado == [])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeUnaListaConCadenasDeDistintoLargoYDeberiaDevolverUnaListaVacia(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeUnaListaConCadenasDeDistintoLargoYDeberiaDevolverUnaListaVacia(self):
         # Arrange
         listaConCadenasDeDistintoLargo = ["b.b.", "....", "..bb", "b.b"]
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -61,7 +61,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeUnMapaValidoYDeberiaDevolverUnaListaDeTuplasConPosicionesDeBotesIntactos(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeUnMapaValidoYDeberiaDevolverUnaListaDeTuplasConPosicionesDeBotesIntactos(self):
         # Arrange
         listaValida = ["b.b..", "b...b", ".....", "....b"]
         disparos = [(1, 1), (3, 4), (1, 3), (4, 5)]
@@ -71,7 +71,7 @@ class ejercicio2Test(unittest.TestCase):
         self.assertListEqual(resultado, [(2, 1), (2, 5)])
 
 
-    def testCoordenadasDeBotesNoHundidosRecibeListaDeDisparosVaciaYUnMapaValidoYDeberiaDevolverUnaListaDeTuplasConPosicionesDeBotesIntactos(self):
+    def testCalcularPosicionesBarcosSobrevivientesRecibeListaDeDisparosVaciaYUnMapaValidoYDeberiaDevolverUnaListaDeTuplasConPosicionesDeBotesIntactos(self):
         # Arrange
         listaValida = ["b..", "...", "..b"]
         disparosInvalidos = []
